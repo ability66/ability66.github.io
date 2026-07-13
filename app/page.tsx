@@ -1,15 +1,15 @@
 const interests = [
   {
-    title: "Graph Foundation Models",
-    text: "Generalizable models that transfer across graph domains, structures, and downstream tasks.",
+    title: "Post-training",
+    text: "Improving reasoning, alignment, and adaptation after pretraining through data, optimization, and feedback.",
+  },
+  {
+    title: "Graph4LLM",
+    text: "Using structured and relational knowledge to strengthen language-model reasoning, retrieval, and memory.",
   },
   {
     title: "Efficient Learning & Inference",
-    text: "Reducing memory, latency, and computation from model design to implementation.",
-  },
-  {
-    title: "AI Systems",
-    text: "Building reliable and scalable systems that turn research ideas into usable software.",
+    text: "Reducing memory, latency, and computation from model design to high-performance implementation.",
   },
 ];
 
@@ -61,8 +61,8 @@ export default function Home() {
           <p className="kicker">M.S. Student at USTC · Data Darkness Lab (DDL)</p>
           <h1>Haokun Liu</h1>
           <p className="lead">
-            I work on <strong>Graph Foundation Models (GFMs)</strong>, efficient
-            learning and inference, and practical AI systems.
+            I am currently interested in <strong>post-training</strong>,
+            <strong> Graph4LLM</strong>, and efficient learning and inference.
           </p>
           <div className="links">
             <a className="primary-link" href="https://scholar.google.com/citations?user=vE0PenEAAAAJ&hl=zh-CN">Google Scholar</a>
@@ -72,7 +72,7 @@ export default function Home() {
         </div>
         <aside className="profile-note">
           <span className="note-label">Current focus</span>
-          <p>Transferable graph models and efficient learning systems.</p>
+          <p>Post-training and graph-augmented reasoning for language models.</p>
           <dl>
             <div><dt>Affiliation</dt><dd>USTC · DDL Lab</dd></div>
             <div>
@@ -94,8 +94,9 @@ export default function Home() {
             I am a master&apos;s student at the University of Science and Technology
             of China and a member of the <strong>Data Darkness Lab (DDL)</strong>,
             advised by <a href="https://staff.ustc.edu.cn/~xkxie/"><strong>Prof. Xike Xie</strong></a>.
-            My work studies how learning systems can generalize across graph
-            domains while remaining efficient enough for real workloads.
+            My current interests are post-training and Graph4LLM: improving
+            model reasoning and adaptation while bringing structured knowledge
+            into language-model systems.
           </p>
           <p>
             I enjoy working across the full path from modeling and experiments
@@ -186,7 +187,7 @@ export default function Home() {
         <div className="container footer-inner">
           <div>
             <strong>Haokun Liu</strong>
-            <p>Graph Foundation Models · Efficient AI · Systems</p>
+            <p>Post-training · Graph4LLM · Efficient AI</p>
           </div>
           <div className="footer-links">
             <a href="https://github.com/ability66">GitHub</a>
