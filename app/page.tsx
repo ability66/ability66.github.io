@@ -75,7 +75,10 @@ export default function Home() {
           <p>Transferable graph models and efficient learning systems.</p>
           <dl>
             <div><dt>Affiliation</dt><dd>USTC · DDL Lab</dd></div>
-            <div><dt>Location</dt><dd>Hefei, China</dd></div>
+            <div>
+              <dt>Advisor</dt>
+              <dd><a href="https://staff.ustc.edu.cn/~xkxie/">Prof. Xike Xie</a></dd>
+            </div>
             <div><dt>Open to</dt><dd>Research collaboration</dd></div>
           </dl>
         </aside>
@@ -89,7 +92,8 @@ export default function Home() {
         <div className="prose">
           <p>
             I am a master&apos;s student at the University of Science and Technology
-            of China and a member of the <strong>Data Darkness Lab (DDL)</strong>.
+            of China and a member of the <strong>Data Darkness Lab (DDL)</strong>,
+            advised by <a href="https://staff.ustc.edu.cn/~xkxie/"><strong>Prof. Xike Xie</strong></a>.
             My work studies how learning systems can generalize across graph
             domains while remaining efficient enough for real workloads.
           </p>
@@ -168,10 +172,12 @@ export default function Home() {
           <article>
             <span>ICPC Asia Regional Contests</span>
             <h3>Multiple Bronze Medals</h3>
+            <p>Medalist across multiple Asia Regional contests, with sustained experience in team-based algorithm design, implementation, and on-site problem solving.</p>
           </article>
           <article>
-            <span>ICPC East Continent Final</span>
+            <span>ICPC East Continent Final (EC-Final)</span>
             <h3>Consecutive Bronze Medals</h3>
+            <p>Earned bronze medals in consecutive EC-Final appearances, competing against leading collegiate programming teams across East Asia.</p>
           </article>
         </div>
       </section>
