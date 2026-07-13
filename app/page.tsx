@@ -1,52 +1,41 @@
-const research = [
+const interests = [
   {
-    index: "01",
-    title: "Foundation Models",
-    text: "Transferable models that generalize across domains, data regimes, and downstream tasks.",
+    title: "Graph Foundation Models",
+    text: "Generalizable models that transfer across graph domains, structures, and downstream tasks.",
   },
   {
-    index: "02",
-    title: "Efficient Inference",
-    text: "Lower latency, memory use, and computational overhead for modern AI workloads.",
+    title: "Efficient Learning & Inference",
+    text: "Reducing memory, latency, and computation from model design to implementation.",
   },
   {
-    index: "03",
     title: "AI Systems",
-    text: "Turning research ideas into practical, scalable, and high-performance implementations.",
+    text: "Building reliable and scalable systems that turn research ideas into usable software.",
   },
 ];
 
 const projects = [
   {
     name: "R-GFM",
-    kind: "Research · ICML 2026",
-    description:
-      "A scale-adaptive foundation model with geometry-aware expert routing for transferable representation learning.",
-    stack: ["PyTorch", "CUDA", "MoE"],
+    description: "Geometry-aware Graph Foundation Models with multi-scale expert routing.",
+    tags: "Research · PyTorch · CUDA",
     href: "https://github.com/USTC-DataDarknessLab/R-GFM",
   },
   {
     name: "MinerU Local Orchestrator",
-    kind: "AI Infrastructure",
-    description:
-      "Local orchestration for reliable, repeatable document-processing workloads.",
-    stack: ["Python", "Systems", "Automation"],
+    description: "Local orchestration for document-processing workloads.",
+    tags: "Systems · Python",
     href: "https://github.com/ability66/mineru-local-orchestrator",
   },
   {
     name: "VLM OCR",
-    kind: "Vision-Language Models",
-    description:
-      "Document understanding and OCR experiments powered by vision-language models.",
-    stack: ["Python", "VLM", "OCR"],
+    description: "OCR and document understanding with vision-language models.",
+    tags: "VLM · Document AI",
     href: "https://github.com/ability66/VLM-ocr",
   },
   {
     name: "Server Watcher",
-    kind: "Developer Tooling",
-    description:
-      "Lightweight monitoring utilities for servers and compute-intensive workloads.",
-    stack: ["Python", "Monitoring", "Linux"],
+    description: "Lightweight monitoring utilities for servers and compute workloads.",
+    tags: "Monitoring · Linux",
     href: "https://github.com/ability66/Server-Watcher",
   },
 ];
@@ -54,159 +43,151 @@ const projects = [
 export default function Home() {
   return (
     <main>
-      <div className="ambient ambient-one" />
-      <div className="ambient ambient-two" />
-
-      <nav className="nav shell" aria-label="Primary navigation">
-        <a className="wordmark" href="#top" aria-label="Back to top">
-          ability<span>66</span>
-        </a>
-        <div className="nav-links">
-          <a href="#research">Research</a>
-          <a href="#publication">Publication</a>
-          <a href="#projects">Projects</a>
+      <header className="site-header">
+        <div className="container header-inner">
+          <a className="brand" href="#top">Haokun Liu</a>
+          <nav aria-label="Primary navigation">
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#publication">Publication</a>
+            <a href="#projects">Projects</a>
+            <a href="#honors">Honors</a>
+          </nav>
         </div>
-        <a className="nav-cta" href="https://github.com/ability66">
-          GitHub ↗
-        </a>
-      </nav>
+      </header>
 
-      <section className="hero shell" id="top">
-        <div className="hero-copy">
-          <div className="eyebrow"><span /> M.S. Student · USTC</div>
-          <h1>
-            Building models that <em>generalize</em>,<br />
-            systems that <em>scale</em>.
-          </h1>
-          <p className="hero-intro">
-            I&apos;m <strong>Haokun Liu</strong>, a researcher and engineer working
-            on foundation models, efficient inference, and AI systems.
+      <section className="hero container" id="top">
+        <div className="hero-main">
+          <p className="kicker">M.S. Student at USTC · Data Darkness Lab (DDL)</p>
+          <h1>Haokun Liu</h1>
+          <p className="lead">
+            I work on <strong>Graph Foundation Models (GFMs)</strong>, efficient
+            learning and inference, and practical AI systems.
           </p>
-          <div className="hero-actions">
-            <a className="button primary" href="#publication">Explore my work <span>↓</span></a>
-            <a className="button quiet" href="https://scholar.google.com/citations?user=vE0PenEAAAAJ&hl=zh-CN">Google Scholar ↗</a>
+          <div className="links">
+            <a className="primary-link" href="https://scholar.google.com/citations?user=vE0PenEAAAAJ&hl=zh-CN">Google Scholar</a>
+            <a href="https://github.com/ability66">GitHub</a>
+            <a href="https://arxiv.org/abs/2605.09993">R-GFM Paper</a>
           </div>
         </div>
-
-        <aside className="signal-card" aria-label="Research snapshot">
-          <div className="signal-header">
-            <span>RESEARCH / SIGNAL</span>
-            <i />
-          </div>
-          <div className="signal-orbit">
-            <div className="orbit-ring ring-one" />
-            <div className="orbit-ring ring-two" />
-            <div className="orbit-core">FM</div>
-            <span className="orbit-label label-one">TRANSFER</span>
-            <span className="orbit-label label-two">EFFICIENCY</span>
-            <span className="orbit-label label-three">SYSTEMS</span>
-          </div>
-          <div className="signal-stats">
-            <div><strong>ICML</strong><span>2026</span></div>
-            <div><strong>49%</strong><span>relative gain</span></div>
-            <div><strong>3</strong><span>research pillars</span></div>
-          </div>
+        <aside className="profile-note">
+          <span className="note-label">Current focus</span>
+          <p>Transferable graph models and efficient learning systems.</p>
+          <dl>
+            <div><dt>Affiliation</dt><dd>USTC · DDL Lab</dd></div>
+            <div><dt>Location</dt><dd>Hefei, China</dd></div>
+            <div><dt>Open to</dt><dd>Research collaboration</dd></div>
+          </dl>
         </aside>
       </section>
 
-      <section className="ticker" aria-label="Research topics">
-        <div>FOUNDATION MODELS <span>✦</span> EFFICIENT INFERENCE <span>✦</span> REPRESENTATION LEARNING <span>✦</span> AI SYSTEMS <span>✦</span> MIXTURE OF EXPERTS</div>
+      <section className="section container two-column" id="about">
+        <div className="section-title">
+          <span>About</span>
+          <h2>A researcher who also likes building things.</h2>
+        </div>
+        <div className="prose">
+          <p>
+            I am a master&apos;s student at the University of Science and Technology
+            of China and a member of the <strong>Data Darkness Lab (DDL)</strong>.
+            My work studies how learning systems can generalize across graph
+            domains while remaining efficient enough for real workloads.
+          </p>
+          <p>
+            I enjoy working across the full path from modeling and experiments
+            to CUDA acceleration, system implementation, and open-source tools.
+            Before research, competitive programming shaped how I approach
+            algorithms, debugging, and engineering trade-offs.
+          </p>
+        </div>
       </section>
 
-      <section className="section shell" id="research">
+      <section className="section container" id="research">
         <div className="section-heading">
-          <span className="section-number">01 / RESEARCH</span>
-          <h2>What I care about</h2>
-          <p>Research questions with a clear path from learning algorithms to working systems.</p>
+          <div><span>Research</span><h2>Areas of interest</h2></div>
+          <p>A focused set of questions rather than a long list of keywords.</p>
         </div>
-        <div className="research-grid">
-          {research.map((item) => (
-            <article className="research-card" key={item.index}>
-              <span className="card-index">{item.index}</span>
+        <div className="interest-grid">
+          {interests.map((item, index) => (
+            <article key={item.title}>
+              <span className="number">0{index + 1}</span>
               <h3>{item.title}</h3>
               <p>{item.text}</p>
-              <div className="card-line" />
             </article>
           ))}
         </div>
       </section>
 
-      <section className="section shell" id="publication">
-        <div className="section-heading compact">
-          <span className="section-number">02 / FEATURED PUBLICATION</span>
-          <h2>R-GFM</h2>
+      <section className="section container" id="publication">
+        <div className="section-heading">
+          <div><span>Featured publication</span><h2>R-GFM</h2></div>
+          <p>ICML 2026</p>
         </div>
-        <article className="publication-card">
-          <div className="publication-meta">
-            <span className="venue">ICML 2026</span>
-            <span>FOUNDATION MODEL · MIXTURE OF EXPERTS</span>
+        <article className="paper-card">
+          <div className="paper-meta">
+            <span>ICML 2026</span>
+            <span>Graph Foundation Models</span>
           </div>
           <h3>Learning Graph Foundation Models on Riemannian Graph-of-Graphs</h3>
           <p className="authors"><strong>Haokun Liu</strong>, Zezhong Ding, Xike Xie</p>
-          <p className="publication-summary">
-            R-GFM learns transferable representations across heterogeneous domains with
-            multi-scale modeling and geometry-aware expert routing. It achieves
-            state-of-the-art performance with up to <strong>49% relative improvement</strong>.
+          <p>
+            R-GFM is a scale-adaptive and geometry-aware GFM designed for
+            transferable representation learning across heterogeneous graph
+            domains. It combines multi-scale modeling with mixture-of-experts
+            routing and achieves state-of-the-art results across diverse tasks.
           </p>
-          <div className="publication-footer">
-            <div className="metric"><strong>49%</strong><span>UP TO RELATIVE IMPROVEMENT</span></div>
-            <div className="publication-links">
-              <a href="https://arxiv.org/abs/2605.09993">Paper ↗</a>
-              <a href="https://github.com/USTC-DataDarknessLab/R-GFM">Code ↗</a>
-            </div>
+          <div className="paper-links">
+            <a href="https://arxiv.org/abs/2605.09993">Read paper →</a>
+            <a href="https://github.com/USTC-DataDarknessLab/R-GFM">View code →</a>
           </div>
         </article>
       </section>
 
-      <section className="section shell" id="projects">
+      <section className="section container" id="projects">
         <div className="section-heading">
-          <span className="section-number">03 / SELECTED WORK</span>
-          <h2>Research & engineering</h2>
-          <p>Selected projects spanning model design, document AI, and practical infrastructure.</p>
+          <div><span>Selected work</span><h2>Projects</h2></div>
+          <p>Research code and practical tools.</p>
         </div>
         <div className="project-list">
-          {projects.map((project, index) => (
-            <a className="project-row" href={project.href} key={project.name}>
-              <span className="project-count">0{index + 1}</span>
-              <div className="project-name"><span>{project.kind}</span><h3>{project.name}</h3></div>
-              <p>{project.description}</p>
-              <div className="stack">{project.stack.map((item) => <span key={item}>{item}</span>)}</div>
-              <span className="project-arrow">↗</span>
+          {projects.map((project) => (
+            <a href={project.href} className="project" key={project.name}>
+              <div><h3>{project.name}</h3><p>{project.description}</p></div>
+              <span>{project.tags}</span>
+              <b aria-hidden="true">↗</b>
             </a>
           ))}
         </div>
       </section>
 
-      <section className="section shell about-section" id="about">
-        <div>
-          <span className="section-number">04 / ABOUT</span>
-          <h2>Research should travel.</h2>
+      <section className="section container" id="honors">
+        <div className="section-heading">
+          <div><span>Competitive programming</span><h2>Honors</h2></div>
+          <p>Selected ICPC achievements.</p>
         </div>
-        <div className="about-copy">
-          <p>
-            I&apos;m a master&apos;s student at the University of Science and Technology
-            of China. I&apos;m interested in models that transfer across domains and
-            implementations that make advanced AI genuinely usable.
-          </p>
-          <p>
-            My work sits between representation learning, efficient inference,
-            and systems engineering—from an idea on paper to performant code.
-          </p>
-          <div className="tool-row"><span>Python</span><span>PyTorch</span><span>CUDA</span><span>C++</span><span>Linux</span></div>
+        <div className="honor-list">
+          <article>
+            <span>ICPC Asia Regional Contests</span>
+            <h3>Multiple Bronze Medals</h3>
+          </article>
+          <article>
+            <span>ICPC East Continent Final</span>
+            <h3>Consecutive Bronze Medals</h3>
+          </article>
         </div>
       </section>
 
-      <footer className="footer shell">
-        <div>
-          <span className="section-number">LET&apos;S CONNECT</span>
-          <h2>Open to research conversations<br />and collaborations.</h2>
+      <footer>
+        <div className="container footer-inner">
+          <div>
+            <strong>Haokun Liu</strong>
+            <p>Graph Foundation Models · Efficient AI · Systems</p>
+          </div>
+          <div className="footer-links">
+            <a href="https://github.com/ability66">GitHub</a>
+            <a href="https://scholar.google.com/citations?user=vE0PenEAAAAJ&hl=zh-CN">Scholar</a>
+            <a href="#top">Back to top ↑</a>
+          </div>
         </div>
-        <div className="footer-links">
-          <a href="https://github.com/ability66">GitHub ↗</a>
-          <a href="https://scholar.google.com/citations?user=vE0PenEAAAAJ&hl=zh-CN">Scholar ↗</a>
-          <a href="https://arxiv.org/abs/2605.09993">arXiv ↗</a>
-        </div>
-        <div className="footer-bottom"><span>© 2026 Haokun Liu</span><a href="#top">Back to top ↑</a></div>
       </footer>
     </main>
   );
