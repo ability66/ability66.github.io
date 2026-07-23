@@ -52,6 +52,7 @@ export default function Home() {
             <a href="#publication">Publication</a>
             <a href="#projects">Projects</a>
             <a href="#honors">Honors</a>
+            <a href="https://pre-interview-site.2510513455.workers.dev">PRE</a>
           </nav>
         </div>
       </header>
